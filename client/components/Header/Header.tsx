@@ -7,6 +7,7 @@ import { FaUser } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 import Dropdown from 'react-bootstrap/Dropdown';
 import Button from 'react-bootstrap/Button';
+import ShopDropdown from './ShopDropdown/ShopDropdown';
 
 
 
@@ -22,7 +23,11 @@ function Header() {
         <NavItem>
               <RxHome /><Link href='/'><span>Home</span></Link> 
         </NavItem>
-      
+        <NavItem>
+             <Link href='/books'>
+            <ShopDropdown />
+              </Link> 
+        </NavItem>
         <NavItem>
               <FaNewspaper/><span>About us</span> 
         </NavItem>
