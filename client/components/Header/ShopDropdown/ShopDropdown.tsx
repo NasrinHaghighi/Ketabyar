@@ -30,20 +30,35 @@ function ShopDropdown() {
     <DropDownMenuShop show={show}>
         <Top>
             <First>
-                <DropdownItem ><Link href='/#feat'>Features</Link></DropdownItem>
-               <DropdownItem href="/"                
-                ><Link href='/#discont'>Disconts</Link></DropdownItem>
+                <DropdownItem ><Link href='/shop'>Art</Link></DropdownItem>
+               <DropdownItem href="/"        
+                ><Link href='/shop'>Biography</Link></DropdownItem>
 
                 <DropdownItem href="/"
-                ><Link href='/'>Authors</Link></DropdownItem>
+                ><Link href='/shop'>Children Books</Link></DropdownItem>
+                <DropdownItem href="/shop"
+                ><Link href='/shop'>Craft & Hobbies</Link></DropdownItem>
             </First>
            
             <Second>
-              <ul>
-                
-              </ul>
+            <DropdownItem ><Link href='/shop'>Romance</Link></DropdownItem>
+               <DropdownItem href="/"        
+                ><Link href='/shop'>Fantasy</Link></DropdownItem>
+
+                <DropdownItem href="/"
+                ><Link href='/shop'>Historical fiction</Link></DropdownItem>
+                <DropdownItem href="/shop"
+                ><Link href='/shop'>War</Link></DropdownItem>
             </Second>
-            <Third>3</Third>
+            <Third>
+            <DropdownItem ><Link href='/shop'>Short stories</Link></DropdownItem>
+               <DropdownItem href="/"        
+                ><Link href='/shop'>Women’s fiction</Link></DropdownItem>
+
+                <DropdownItem href="/"
+                ><Link href='/shop'>Mystery</Link></DropdownItem>
+                
+            </Third>
             <Fourth>
             <Images src='/books/23.jpg' width={200} height={250}   alt="book"/>
             </Fourth>

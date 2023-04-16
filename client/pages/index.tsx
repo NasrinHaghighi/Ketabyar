@@ -6,8 +6,10 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Slider from "../components/LandingPage/Slider/SliderCo";
 import Features from '@/components/LandingPage/Features/Features';
-
-
+import Category from '@/components/LandingPage/Category/Category';
+import MovingBanner from '@/components/LandingPage/MovingBanner/MovingBanner';
+import ReactVerticalTimelineComponentTests from '@/components/LandingPage/Timeline/TimeLine';
+import Aduio from '@/components/LandingPage/Audio/Aduio';
 const inter = Inter({ subsets: ['latin'] })
 
 const Home: NextPage = () => {
@@ -16,13 +18,13 @@ const Home: NextPage = () => {
     <>
       <Slider />
       <Features /> 
-   {/* <CategorySectio />
-    
+   <Category />
+   <MovingBanner />
    
-    <Discount id='discont'/>
-    <MovingBanner />
+     {/*<Discount id='discont'/>*/}
+   
     <Aduio />
-    <ReactVerticalTimelineComponentTests /> */}
+    <ReactVerticalTimelineComponentTests /> 
 
     </>
   );

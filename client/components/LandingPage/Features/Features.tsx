@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from 'react'
-//import { fetchFeatures} from '../../../utiles';
-
 import {Flex, ListConatiner, FlexConatiner, SwiperSlideStyled} from './styles'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Images } from "../../../helpers/Image";
@@ -11,23 +9,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 
 
-export interface Item{
-    id:string,
-    etag:string,
-    volumeInfo:{
-      description:string,
-      pageCount:number,
-        title:string,
-        subtitle:string,
-        authors:string[],
-        categort:string[]
-        imageLinks:{
-            smallThumbnail:string,
-            thumbnail:string
-        }
-          
-    }
-}
+
 
 function Features({id}:any) {
   const [data, setdata] =useState<any>([])

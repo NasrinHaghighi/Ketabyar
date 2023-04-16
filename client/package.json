@@ -20,13 +20,16 @@
     "react-dom": "18.2.0",
     "react-dropdown": "^1.11.0",
     "react-icons": "^4.8.0",
+    "react-in-viewport": "^1.0.0-alpha.30",
     "react-slick": "^0.29.0",
+    "react-vertical-timeline-component": "^3.6.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.9",
     "swiper": "^9.2.2",
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@types/bootstrap": "^5.2.6"
+    "@types/bootstrap": "^5.2.6",
+    "@types/react-vertical-timeline-component": "^3.3.3"
   }
 }
