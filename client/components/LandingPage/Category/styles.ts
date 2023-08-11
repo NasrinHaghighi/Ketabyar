@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+
+
 export const Conatiner=styled.div`
 max-width: 100%;
  margin:100px auto 200px auto;
@@ -7,6 +9,7 @@ export const InnerConatiner=styled.div`
   max-width: 1920px;
     margin:0 auto ;
     padding:0 50px ;
+
 `
 export const Title=styled.div`
     font-weight:700 ;
@@ -29,7 +32,12 @@ export const Top=styled.div`
     display:flex ;
     justify-content:space-between ;
     align-items:center ;
-   
+    @media (max-width:600px) {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  } 
 
 `
 export const ViewAll=styled.div`
@@ -44,9 +52,35 @@ display: grid;
 grid-template-columns: repeat(5, 1fr);
 grid-column-gap: 50px;
 
-   @media (max-width:1400px) {
-    //grid-template-columns: repeat(2, 1fr);
-}
+@media (max-width:1400px) {
+      display: grid;
+    
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 50px;
+grid-row-gap: 50px;
+  
+} 
+@media (max-width:900px) {
+      display: grid;
+      align-items: center;
+  justify-items: center; 
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 50px;
+grid-row-gap: 50px;
+  
+} 
+@media (max-width:600px) {
+      display: grid;
+      align-items: center;
+  justify-items: center; 
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 50px;
+grid-row-gap: 50px;
+  
+} 
 
 `
 export const CategoryItem=styled.div`

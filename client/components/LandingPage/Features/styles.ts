@@ -7,6 +7,7 @@ margin:0 auto ;
 background-color:${props=>props.theme.grayBG} ;
 width:100%;
 padding:50px ;
+
 `
 
 
@@ -29,8 +30,14 @@ export const Flex=styled.div`
     bottom:-10px ;
  }   
 }
+
 `
 export const ListConatiner=styled.div`
+
+  @media (max-width:1600px) {
+ background-color: aliceblue;
+
+}   
 
 
 `
@@ -70,5 +77,6 @@ display:flex ;
    transition:all 0.3s ease-in-out ;
    transform: translate(-670px, -40px);
 }
+
 
 `

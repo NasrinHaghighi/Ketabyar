@@ -37,11 +37,20 @@ setdata(newArr)
    <Swiper
    navigation={true}
    modules={[Navigation]}
-    
-      spaceBetween={50}
-      slidesPerView={3.8}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+   spaceBetween={50}
+   slidesPerView={3.5}
+   onSlideChange={() => console.log('slide change')}
+   onSwiper={(swiper) => console.log(swiper)}
+   breakpoints = {{
+    1024: {
+        slidesPerView: 4,
+        spaceBetween : 150
+    },
+    768: {
+        slidesPerView: 3,
+        spaceBetween : 200
+    }
+}}
     >
       {data?.map((item:[])=>{
         
